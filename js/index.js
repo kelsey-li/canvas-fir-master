@@ -92,7 +92,7 @@ window.onload = function () {
         alert('黑棋赢');
         if(confirm('再来一局')){
           localStorage.clear();
-          qizi = {};
+          location.reload();
           huaqipan();
           kaiguan = true;
           return;
@@ -104,8 +104,8 @@ window.onload = function () {
       if( panduan(x,y,'white') ){
         alert('白棋赢');
         if(confirm('再来一局')){
+          location.reload();
           localStorage.clear();
-          qizi = {};
           huaqipan();
           kaiguan = true;
           return;
